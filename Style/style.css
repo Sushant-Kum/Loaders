@@ -125,7 +125,7 @@ h2.zero,p.zero {
 .clr {
     clear:both;
 }
-textarea {
+textarea.form-control {
     resize:none;
     font-family:Arial;
     -webkit-box-sizing: border-box;
