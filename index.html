@@ -2,22 +2,19 @@
 <html>
 	<head>
 		<title>CSS Loaders by Sushant Kumar</title>
-		<script src="JS/jquery-2.2.4.min.js" type="text/javascript"></script>
-		<script src="JS/javascript.js" type="text/javascript"></script>
-		<link href="Bootstrap-3.3.6/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link href="Style/style.css" rel="stylesheet" type="text/css">
-		<script src="Bootstrap-3.3.6/bootstrap.min.js" type="text/javascript"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</head>
 	<body>
-	    
-	<div id="home" class="container" style="background:#3498DB; widht:800px;">
+        <div id="home" class="container" style="background:#3498DB;">
             <div class="jumbotron">
                 <h1>CSS Loaders</h1>
                 <p>A collection of cool pure CSS loaders.</p>
                 <p style="float:right; color:grey; font-size:14px;">-Sushant Kumar</p>
             </div>
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-sm-6">
                     <div class="clr"></div>
                     <ul id="2d_selecter" class="box eff" onclick="smoothScroll('2D');">
                         <li>
@@ -36,7 +33,8 @@
                         <p class="zero">Click Above to Take a Peek</p>
                     </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="clr"></div>
+                <div class="col-sm-6">
                     <div class="clr"></div>
                     <ul id="3d_selecter" class="box eff" onclick="smoothScroll('3D');">
                         <li>
@@ -67,11 +65,11 @@
                     <div class="thumbnail">
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/924/I79B24.png" alt="">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <h3>Charging Battery</h3>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a class="btn btn-primary" role="button" onclick="$(this).open('charging_battery_anim');">View Animation</a>
+                                <a class="btn btn-default" role="button" onclick="$(this).open('charging_battery_code');">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -80,11 +78,11 @@
                     <div class="thumbnail">
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/923/VkiW6Y.png" alt="">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <h3>Rotating Bird</h3>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('rotating_bird_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('rotating_bird_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -93,24 +91,11 @@
                     <div class="thumbnail">
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/923/GqkE9i.png" alt="">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <h3>Warm Coffee</h3>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <div class="thumbnail">
-                        <img src="http://imagizer.imageshack.us/v2/640x480q90/922/mhcHCA.png" alt="">
-                        <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('coffee_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('coffee_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -119,11 +104,11 @@
                     <div class="thumbnail">
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/924/addQto.png" alt="">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <h3>Waiting Hand</h3>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -132,11 +117,11 @@
                     <div class="thumbnail">
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/923/ZXyZ20.png" alt="">
                         <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <h3>Swooshing Hash</h3>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hash_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hash_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -146,10 +131,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/921/qldKhF.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -159,23 +144,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/924/WkNjhk.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4">
-                    <div class="thumbnail">
-                        <img src="http://imagizer.imageshack.us/v2/640x480q90/924/fRGJKy.png" alt="">
-                        <div class="caption">
-                            <h3>Thumbnail label</h3>
-                            <p>...</p>
-                            <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -185,10 +157,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/921/clp8Mb.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 2 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -206,10 +178,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/924/gHtoZd.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 3 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -219,10 +191,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/924/kBL239.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 3 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -232,10 +204,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/922/h7HXW5.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 3 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -245,10 +217,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/923/kJxLYO.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 3 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -258,10 +230,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/924/v2lQQ2.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 3 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -271,10 +243,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/922/4GqI3D.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 3 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -284,10 +256,10 @@
                         <img src="http://imagizer.imageshack.us/v2/640x480q90/923/yOj4Tc.png" alt="">
                         <div class="caption">
                             <h3>Thumbnail label</h3>
-                            <p>...</p>
+                            <p class="type">Type: 3 Dimensional</p>
                             <p>
-                                <a href="#" class="btn btn-primary" role="button">Button</a>
-                                <a href="#" class="btn btn-default" role="button">Button</a>
+                                <a onclick="$(this).open('hand_anim');" class="btn btn-primary" role="button">View Animation</a>
+                                <a onclick="$(this).open('hand_code');" class="btn btn-default" role="button">View Code</a>
                             </p>
                         </div>
                     </div>
@@ -295,7 +267,2017 @@
             </div>
         </div>
         
+        <div id="charging_battery_anim" class="anim_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('charging_battery_anim');" alt=""/>
+            <div class="clr"></div>
+            <div class="cssload-battery">
+            	<div class="cssload-liquid"></div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div id="charging_battery_code" class="code_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('charging_battery_code');" alt=""/>
+            <div class="clr"></div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">HTML Markup:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="5">
+&ltdiv class="cssload-battery"&gt&lt/div&gt
+    &ltdiv class="cssload-liquid"&gt&lt/div&gt
+&lt/div&gt
+                    </textarea>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">The CSS:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="8">
+.cssload-battery {
+	display: block;
+	margin:97px auto;
+	position: relative;
+	width: 2.25rem;
+	height: 4.5rem;
+	box-shadow: 0 0 0 0.2rem rgb(66,92,119);
+		-o-box-shadow: 0 0 0 0.2rem rgb(66,92,119);
+		-ms-box-shadow: 0 0 0 0.2rem rgb(66,92,119);
+		-webkit-box-shadow: 0 0 0 0.2rem rgb(66,92,119);
+		-moz-box-shadow: 0 0 0 0.2rem rgb(66,92,119);
+	border-radius: 0.09rem;
+		-o-border-radius: 0.09rem;
+		-ms-border-radius: 0.09rem;
+		-webkit-border-radius: 0.09rem;
+		-moz-border-radius: 0.09rem;
+	background: white;
+}
+.cssload-battery:before {
+	content: '';
+	position: absolute;
+	left: 0.5625rem;
+	right: 0.5625rem;
+	top: -0.3375rem;
+	height: 0.3375rem;
+	width: 1.125rem;
+	background: rgb(66,92,119);
+	border-radius: 0.18rem;
+		-o-border-radius: 0.18rem;
+		-ms-border-radius: 0.18rem;
+		-webkit-border-radius: 0.18rem;
+		-moz-border-radius: 0.18rem;
+}
+.cssload-battery:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-right: 2.25rem solid transparent;
+	border-bottom: 4.05rem solid rgba(255,255,255,0.325);
+}
+
+.cssload-liquid {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 2.25rem;
+	background: rgb(113,251,133);
+	animation: load 2.59s infinite;
+		-o-animation: load 2.59s infinite;
+		-ms-animation: load 2.59s infinite;
+		-webkit-animation: load 2.59s infinite;
+		-moz-animation: load 2.59s infinite;
+}
+.cssload-liquid:after, .cssload-liquid:before {
+	content: '';
+	position: absolute;
+	top: -0.5rem;
+	height: 1.125rem;
+	width: 1.4625rem;
+	background: rgb(113,251,133);
+	opacity: 0;
+	border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+}
+.cssload-liquid:after {
+	right: 0;
+	animation: cssload-liquid-1 2.59s infinite;
+		-o-animation: cssload-liquid-1 2.59s infinite;
+		-ms-animation: cssload-liquid-1 2.59s infinite;
+		-webkit-animation: cssload-liquid-1 2.59s infinite;
+		-moz-animation: cssload-liquid-1 2.59s infinite;
+}
+.cssload-liquid:before {
+	left: 0;
+	animation: cssload-liquid-2 2.59s infinite;
+		-o-animation: cssload-liquid-2 2.59s infinite;
+		-ms-animation: cssload-liquid-2 2.59s infinite;
+		-webkit-animation: cssload-liquid-2 2.59s infinite;
+		-moz-animation: cssload-liquid-2 2.59s infinite;
+}
+
+@keyframes load {
+	0% {
+		top: 4.5rem;
+	}
+	70% {
+		top: 1.125rem;
+	}
+	90% {
+		top: 0;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 4.5rem;
+	}
+}
+
+@-o-keyframes load {
+	0% {
+		top: 4.5rem;
+	}
+	70% {
+		top: 1.125rem;
+	}
+	90% {
+		top: 0;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 4.5rem;
+	}
+}
+
+@-ms-keyframes load {
+	0% {
+		top: 4.5rem;
+	}
+	70% {
+		top: 1.125rem;
+	}
+	90% {
+		top: 0;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 4.5rem;
+	}
+}
+
+@-webkit-keyframes load {
+	0% {
+		top: 4.5rem;
+	}
+	70% {
+		top: 1.125rem;
+	}
+	90% {
+		top: 0;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 4.5rem;
+	}
+}
+
+@-moz-keyframes load {
+	0% {
+		top: 4.5rem;
+	}
+	70% {
+		top: 1.125rem;
+	}
+	90% {
+		top: 0;
+	}
+	95% {
+		top: 0;
+	}
+	100% {
+		top: 4.5rem;
+	}
+}
+
+@keyframes cssload-liquid-1 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	22% {
+		height: 0.28125rem;
+		top: 0.375rem;
+		opacity: 1;
+	}
+	25% {
+		top: -0.25rem;
+	}
+	35% {
+		height: 1.125rem;
+		top: -0.5rem;
+	}
+	55% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 0.61875rem;
+		opacity: 1;
+		top: -0.275rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-liquid-1 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	22% {
+		height: 0.28125rem;
+		top: 0.375rem;
+		opacity: 1;
+	}
+	25% {
+		top: -0.25rem;
+	}
+	35% {
+		height: 1.125rem;
+		top: -0.5rem;
+	}
+	55% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 0.61875rem;
+		opacity: 1;
+		top: -0.275rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-liquid-1 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	22% {
+		height: 0.28125rem;
+		top: 0.375rem;
+		opacity: 1;
+	}
+	25% {
+		top: -0.25rem;
+	}
+	35% {
+		height: 1.125rem;
+		top: -0.5rem;
+	}
+	55% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 0.61875rem;
+		opacity: 1;
+		top: -0.275rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-liquid-1 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	22% {
+		height: 0.28125rem;
+		top: 0.375rem;
+		opacity: 1;
+	}
+	25% {
+		top: -0.25rem;
+	}
+	35% {
+		height: 1.125rem;
+		top: -0.5rem;
+	}
+	55% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 0.61875rem;
+		opacity: 1;
+		top: -0.275rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-liquid-1 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	22% {
+		height: 0.28125rem;
+		top: 0.375rem;
+		opacity: 1;
+	}
+	25% {
+		top: -0.25rem;
+	}
+	35% {
+		height: 1.125rem;
+		top: -0.5rem;
+	}
+	55% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 0.61875rem;
+		opacity: 1;
+		top: -0.275rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@keyframes cssload-liquid-2 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	17.5% {
+		height: 0.28125rem;
+		top: 0.2rem;
+		opacity: 1;
+	}
+	20% {
+		top: -0.25rem;
+	}
+	25% {
+		height: 1.40625rem;
+		top: -0.625rem;
+	}
+	45% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 1.40625rem;
+		opacity: 1;
+		top: -0.5rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-liquid-2 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	17.5% {
+		height: 0.28125rem;
+		top: 0.2rem;
+		opacity: 1;
+	}
+	20% {
+		top: -0.25rem;
+	}
+	25% {
+		height: 1.40625rem;
+		top: -0.625rem;
+	}
+	45% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 1.40625rem;
+		opacity: 1;
+		top: -0.5rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-liquid-2 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	17.5% {
+		height: 0.28125rem;
+		top: 0.2rem;
+		opacity: 1;
+	}
+	20% {
+		top: -0.25rem;
+	}
+	25% {
+		height: 1.40625rem;
+		top: -0.625rem;
+	}
+	45% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 1.40625rem;
+		opacity: 1;
+		top: -0.5rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-liquid-2 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	17.5% {
+		height: 0.28125rem;
+		top: 0.2rem;
+		opacity: 1;
+	}
+	20% {
+		top: -0.25rem;
+	}
+	25% {
+		height: 1.40625rem;
+		top: -0.625rem;
+	}
+	45% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 1.40625rem;
+		opacity: 1;
+		top: -0.5rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-liquid-2 {
+	0% {
+		height: 0;
+		opacity: 0;
+		top: -0.5rem;
+	}
+	17.5% {
+		height: 0.28125rem;
+		top: 0.2rem;
+		opacity: 1;
+	}
+	20% {
+		top: -0.25rem;
+	}
+	25% {
+		height: 1.40625rem;
+		top: -0.625rem;
+	}
+	45% {
+		height: 0.28125rem;
+		top: -0.125rem;
+	}
+	60% {
+		height: 1.40625rem;
+		opacity: 1;
+		top: -0.5rem;
+	}
+	96% {
+		height: 0.84375rem;
+		opacity: 0;
+		top: 0.5rem;
+	}
+	100% {
+		height: 0;
+		opacity: 0;
+	}
+}
+                    </pre>
+                    </code>
+                    </textarea>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
         
-        <img id="home_button" src="http://imageshack.com/a/img921/6618/PwK2ZZ.png" onclick="smoothScroll('home');"/>
+        <div id="rotating_bird_anim" class="anim_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('rotating_bird_anim');" alt=""/>
+            <div class="clr"></div>
+            <div class="cssload-container">
+                <div class="cssload-loro">
+                    <div class="cssload-circ"></div>
+                    <div class="cssload-circ3"></div>
+                    <div class="cssload-circ5"></div>
+                    <div class="cssload-circ7"></div>
+                    <div class="cssload-ojo"></div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div id="rotating_bird_code" class="code_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('rotating_bird_code');" alt=""/>
+            <div class="clr"></div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">HTML Markup:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="5">
+&ltdiv class="cssload-container"&gt
+	&ltdiv class="cssload-loro"&gt
+		&ltdiv class="cssload-circ"&gt&lt/div&gt
+		&ltdiv class="cssload-circ3"&gt&lt/div&gt
+		&ltdiv class="cssload-circ5"&gt&lt/div&gt
+		&ltdiv class="cssload-circ7"&gt&lt/div&gt
+		&ltdiv class="cssload-ojo"&gt&lt/div&gt
+	&lt/div&gt
+&ltdiv&gt
+                    </textarea>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">The CSS:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="8">
+.cssload-container {
+	position: relative;
+	width: 100%;
+	height: 450px;
+	padding-top: 0px;
+}
+
+.cssload-loro {
+	position: relative;
+	width: 347px;
+	height: 450px;
+	margin: 0 auto;
+}
+
+.cssload-circ {
+	position: absolute;
+	width: 182px;
+	height: 318px;
+	border-radius: 450px 0 0 450px;
+	background: rgb(37,177,176);
+	margin: 45px 50%;
+	transform-origin: 50% 50%;
+		-o-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		-webkit-transform-origin: 50% 50%;
+		-moz-transform-origin: 50% 50%;
+	animation: cssload-gira 3.45s linear infinite;
+		-o-animation: cssload-gira 3.45s linear infinite;
+		-ms-animation: cssload-gira 3.45s linear infinite;
+		-webkit-animation: cssload-gira 3.45s linear infinite;
+		-moz-animation: cssload-gira 3.45s linear infinite;
+}
+
+.cssload-circ3 {
+	position: absolute;
+	display: block;
+	width: 120px;
+	height: 68px;
+	border-radius: 0 0 135px 135px;
+	background: rgb(247,165,0);
+	margin: 182px 288px;
+	transform-origin: -21% 53%;
+		-o-transform-origin: -21% 53%;
+		-ms-transform-origin: -21% 53%;
+		-webkit-transform-origin: -21% 53%;
+		-moz-transform-origin: -21% 53%;
+	animation: cssload-gira5 3.45s linear infinite;
+		-o-animation: cssload-gira5 3.45s linear infinite;
+		-ms-animation: cssload-gira5 3.45s linear infinite;
+		-webkit-animation: cssload-gira5 3.45s linear infinite;
+		-moz-animation: cssload-gira5 3.45s linear infinite;
+}
+
+.cssload-circ5 {
+	position: absolute;
+	width: 113px;
+	height: 182px;
+	border-radius: 135px 0 0 135px;
+	background: white;
+	margin: 105px 242px;
+	transform-origin: 19% 50%;
+		-o-transform-origin: 19% 50%;
+		-ms-transform-origin: 19% 50%;
+		-webkit-transform-origin: 19% 50%;
+		-moz-transform-origin: 19% 50%;
+	animation: cssload-gira3 3.45s linear infinite;
+		-o-animation: cssload-gira3 3.45s linear infinite;
+		-ms-animation: cssload-gira3 3.45s linear infinite;
+		-webkit-animation: cssload-gira3 3.45s linear infinite;
+		-moz-animation: cssload-gira3 3.45s linear infinite;
+}
+
+.cssload-ojo {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background: rgb(51,51,51);
+	border: 5px solid rgb(255,102,102);
+	margin: 135px 288px;
+	animation: cssload-va 3.45s linear infinite;
+		-o-animation: cssload-va 3.45s linear infinite;
+		-ms-animation: cssload-va 3.45s linear infinite;
+		-webkit-animation: cssload-va 3.45s linear infinite;
+		-moz-animation: cssload-va 3.45s linear infinite;
+	z-index: 33;
+}
+
+.cssload-circ7 {
+	position: absolute;
+	width: 83px;
+	height: 90px;
+	border-radius: 0 288px 0 0;
+	background: rgb(247,206,67);
+	margin: 105px 353px;
+	transform-origin: -102% 207%;
+		-o-transform-origin: -102% 207%;
+		-ms-transform-origin: -102% 207%;
+		-webkit-transform-origin: -102% 207%;
+		-moz-transform-origin: -102% 207%;
+	animation: cssload-gira7 3.45s linear infinite;
+		-o-animation: cssload-gira7 3.45s linear infinite;
+		-ms-animation: cssload-gira7 3.45s linear infinite;
+		-webkit-animation: cssload-gira7 3.45s linear infinite;
+		-moz-animation: cssload-gira7 3.45s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes cssload-gira {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	55% {
+		transform: rotate(180deg);
+	}
+	60% {
+		transform: rotate(180deg);
+	}
+	65% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(360deg);
+	}
+	80% {
+		transform: rotate(360deg);
+	}
+	85% {
+		transform: rotate(360deg);
+	}
+	90% {
+		transform: rotate(360deg);
+	}
+	95% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes cssload-gira {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+	25% {
+		-o-transform: rotate(0deg);
+	}
+	50% {
+		-o-transform: rotate(180deg);
+	}
+	55% {
+		-o-transform: rotate(180deg);
+	}
+	60% {
+		-o-transform: rotate(180deg);
+	}
+	65% {
+		-o-transform: rotate(180deg);
+	}
+	75% {
+		-o-transform: rotate(360deg);
+	}
+	80% {
+		-o-transform: rotate(360deg);
+	}
+	85% {
+		-o-transform: rotate(360deg);
+	}
+	90% {
+		-o-transform: rotate(360deg);
+	}
+	95% {
+		-o-transform: rotate(360deg);
+	}
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-gira {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+	25% {
+		-ms-transform: rotate(0deg);
+	}
+	50% {
+		-ms-transform: rotate(180deg);
+	}
+	55% {
+		-ms-transform: rotate(180deg);
+	}
+	60% {
+		-ms-transform: rotate(180deg);
+	}
+	65% {
+		-ms-transform: rotate(180deg);
+	}
+	75% {
+		-ms-transform: rotate(360deg);
+	}
+	80% {
+		-ms-transform: rotate(360deg);
+	}
+	85% {
+		-ms-transform: rotate(360deg);
+	}
+	90% {
+		-ms-transform: rotate(360deg);
+	}
+	95% {
+		-ms-transform: rotate(360deg);
+	}
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-gira {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	55% {
+		-webkit-transform: rotate(180deg);
+	}
+	60% {
+		-webkit-transform: rotate(180deg);
+	}
+	65% {
+		-webkit-transform: rotate(180deg);
+	}
+	75% {
+		-webkit-transform: rotate(360deg);
+	}
+	80% {
+		-webkit-transform: rotate(360deg);
+	}
+	85% {
+		-webkit-transform: rotate(360deg);
+	}
+	90% {
+		-webkit-transform: rotate(360deg);
+	}
+	95% {
+		-webkit-transform: rotate(360deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cssload-gira {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(0deg);
+	}
+	50% {
+		-moz-transform: rotate(180deg);
+	}
+	55% {
+		-moz-transform: rotate(180deg);
+	}
+	60% {
+		-moz-transform: rotate(180deg);
+	}
+	65% {
+		-moz-transform: rotate(180deg);
+	}
+	75% {
+		-moz-transform: rotate(360deg);
+	}
+	80% {
+		-moz-transform: rotate(360deg);
+	}
+	85% {
+		-moz-transform: rotate(360deg);
+	}
+	90% {
+		-moz-transform: rotate(360deg);
+	}
+	95% {
+		-moz-transform: rotate(360deg);
+	}
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@keyframes cssload-gira3 {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-180deg);
+	}
+	55% {
+		transform: rotate(-180deg);
+	}
+	60% {
+		transform: rotate(-180deg);
+	}
+	65% {
+		transform: rotate(-180deg);
+	}
+	75% {
+		transform: rotate(-360deg);
+	}
+	80% {
+		transform: rotate(-360deg);
+	}
+	85% {
+		transform: rotate(-360deg);
+	}
+	90% {
+		transform: rotate(-360deg);
+	}
+	95% {
+		transform: rotate(-360deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+@-o-keyframes cssload-gira3 {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+	25% {
+		-o-transform: rotate(0deg);
+	}
+	50% {
+		-o-transform: rotate(-180deg);
+	}
+	55% {
+		-o-transform: rotate(-180deg);
+	}
+	60% {
+		-o-transform: rotate(-180deg);
+	}
+	65% {
+		-o-transform: rotate(-180deg);
+	}
+	75% {
+		-o-transform: rotate(-360deg);
+	}
+	80% {
+		-o-transform: rotate(-360deg);
+	}
+	85% {
+		-o-transform: rotate(-360deg);
+	}
+	90% {
+		-o-transform: rotate(-360deg);
+	}
+	95% {
+		-o-transform: rotate(-360deg);
+	}
+	100% {
+		-o-transform: rotate(-360deg);
+	}
+}
+
+@-ms-keyframes cssload-gira3 {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+	25% {
+		-ms-transform: rotate(0deg);
+	}
+	50% {
+		-ms-transform: rotate(-180deg);
+	}
+	55% {
+		-ms-transform: rotate(-180deg);
+	}
+	60% {
+		-ms-transform: rotate(-180deg);
+	}
+	65% {
+		-ms-transform: rotate(-180deg);
+	}
+	75% {
+		-ms-transform: rotate(-360deg);
+	}
+	80% {
+		-ms-transform: rotate(-360deg);
+	}
+	85% {
+		-ms-transform: rotate(-360deg);
+	}
+	90% {
+		-ms-transform: rotate(-360deg);
+	}
+	95% {
+		-ms-transform: rotate(-360deg);
+	}
+	100% {
+		-ms-transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes cssload-gira3 {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(-180deg);
+	}
+	55% {
+		-webkit-transform: rotate(-180deg);
+	}
+	60% {
+		-webkit-transform: rotate(-180deg);
+	}
+	65% {
+		-webkit-transform: rotate(-180deg);
+	}
+	75% {
+		-webkit-transform: rotate(-360deg);
+	}
+	80% {
+		-webkit-transform: rotate(-360deg);
+	}
+	85% {
+		-webkit-transform: rotate(-360deg);
+	}
+	90% {
+		-webkit-transform: rotate(-360deg);
+	}
+	95% {
+		-webkit-transform: rotate(-360deg);
+	}
+	100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+@-moz-keyframes cssload-gira3 {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(0deg);
+	}
+	50% {
+		-moz-transform: rotate(-180deg);
+	}
+	55% {
+		-moz-transform: rotate(-180deg);
+	}
+	60% {
+		-moz-transform: rotate(-180deg);
+	}
+	65% {
+		-moz-transform: rotate(-180deg);
+	}
+	75% {
+		-moz-transform: rotate(-360deg);
+	}
+	80% {
+		-moz-transform: rotate(-360deg);
+	}
+	85% {
+		-moz-transform: rotate(-360deg);
+	}
+	90% {
+		-moz-transform: rotate(-360deg);
+	}
+	95% {
+		-moz-transform: rotate(-360deg);
+	}
+	100% {
+		-moz-transform: rotate(-360deg);
+	}
+}
+
+@keyframes cssload-gira5 {
+	0% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	25% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	50% {
+		transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	55% {
+		transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	60% {
+		transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	65% {
+		transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	75% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	80% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	85% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	90% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	95% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	100% {
+		transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+}
+
+@-o-keyframes cssload-gira5 {
+	0% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	25% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	50% {
+		-o-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	55% {
+		-o-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	60% {
+		-o-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	65% {
+		-o-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	75% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	80% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	85% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	90% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	95% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	100% {
+		-o-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+}
+
+@-ms-keyframes cssload-gira5 {
+	0% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	25% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	50% {
+		-ms-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	55% {
+		-ms-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	60% {
+		-ms-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	65% {
+		-ms-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	75% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	80% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	85% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	90% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	95% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	100% {
+		-ms-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+}
+
+@-webkit-keyframes cssload-gira5 {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	25% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	50% {
+		-webkit-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	55% {
+		-webkit-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	60% {
+		-webkit-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	65% {
+		-webkit-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	75% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	80% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	85% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	90% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	95% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+}
+
+@-moz-keyframes cssload-gira5 {
+	0% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	25% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	50% {
+		-moz-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	55% {
+		-moz-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	60% {
+		-moz-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	65% {
+		-moz-transform: rotate(-180deg);
+		border-radius: 135px 135px 0 0;
+	}
+	75% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	80% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	85% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	90% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	95% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+	100% {
+		-moz-transform: rotate(0deg);
+		border-radius: 0 0 135px 135px;
+	}
+}
+
+@keyframes cssload-gira7 {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(-90deg);
+	}
+	55% {
+		transform: rotate(-90deg);
+	}
+	60% {
+		transform: rotate(-90deg);
+	}
+	65% {
+		transform: rotate(-90deg);
+		;
+	}
+	75% {
+		transform: rotate(0deg);
+	}
+	80% {
+		transform: rotate(0deg);
+	}
+	85% {
+		transform: rotate(0deg);
+	}
+	90% {
+		transform: rotate(0deg);
+	}
+	95% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@-o-keyframes cssload-gira7 {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+	25% {
+		-o-transform: rotate(0deg);
+	}
+	50% {
+		-o-transform: rotate(-90deg);
+	}
+	55% {
+		-o-transform: rotate(-90deg);
+	}
+	60% {
+		-o-transform: rotate(-90deg);
+	}
+	65% {
+		-o-transform: rotate(-90deg);
+		;
+	}
+	75% {
+		-o-transform: rotate(0deg);
+	}
+	80% {
+		-o-transform: rotate(0deg);
+	}
+	85% {
+		-o-transform: rotate(0deg);
+	}
+	90% {
+		-o-transform: rotate(0deg);
+	}
+	95% {
+		-o-transform: rotate(0deg);
+	}
+	100% {
+		-o-transform: rotate(0deg);
+	}
+}
+
+@-ms-keyframes cssload-gira7 {
+	0% {
+		-ms-transform: rotate(0deg);
+	}
+	25% {
+		-ms-transform: rotate(0deg);
+	}
+	50% {
+		-ms-transform: rotate(-90deg);
+	}
+	55% {
+		-ms-transform: rotate(-90deg);
+	}
+	60% {
+		-ms-transform: rotate(-90deg);
+	}
+	65% {
+		-ms-transform: rotate(-90deg);
+		;
+	}
+	75% {
+		-ms-transform: rotate(0deg);
+	}
+	80% {
+		-ms-transform: rotate(0deg);
+	}
+	85% {
+		-ms-transform: rotate(0deg);
+	}
+	90% {
+		-ms-transform: rotate(0deg);
+	}
+	95% {
+		-ms-transform: rotate(0deg);
+	}
+	100% {
+		-ms-transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes cssload-gira7 {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(0deg);
+	}
+	50% {
+		-webkit-transform: rotate(-90deg);
+	}
+	55% {
+		-webkit-transform: rotate(-90deg);
+	}
+	60% {
+		-webkit-transform: rotate(-90deg);
+	}
+	65% {
+		-webkit-transform: rotate(-90deg);
+		;
+	}
+	75% {
+		-webkit-transform: rotate(0deg);
+	}
+	80% {
+		-webkit-transform: rotate(0deg);
+	}
+	85% {
+		-webkit-transform: rotate(0deg);
+	}
+	90% {
+		-webkit-transform: rotate(0deg);
+	}
+	95% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+@-moz-keyframes cssload-gira7 {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	25% {
+		-moz-transform: rotate(0deg);
+	}
+	50% {
+		-moz-transform: rotate(-90deg);
+	}
+	55% {
+		-moz-transform: rotate(-90deg);
+	}
+	60% {
+		-moz-transform: rotate(-90deg);
+	}
+	65% {
+		-moz-transform: rotate(-90deg);
+		;
+	}
+	75% {
+		-moz-transform: rotate(0deg);
+	}
+	80% {
+		-moz-transform: rotate(0deg);
+	}
+	85% {
+		-moz-transform: rotate(0deg);
+	}
+	90% {
+		-moz-transform: rotate(0deg);
+	}
+	95% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(0deg);
+	}
+}
+
+@keyframes cssload-va {
+	0% {
+		margin-left: 288px;
+	}
+	25% {
+		margin-left: 288px;
+	}
+	50% {
+		margin-left: 182px;
+	}
+	55% {
+		margin-left: 182px;
+	}
+	60% {
+		margin-left: 182px;
+	}
+	65% {
+		margin-left: 182px;
+	}
+	75% {
+		margin-left: 288px;
+	}
+	80% {
+		margin-left: 288px;
+	}
+	85% {
+		margin-left: 288px;
+	}
+	90% {
+		margin-left: 288px;
+	}
+	95% {
+		margin-left: 288px;
+	}
+	100% {
+		margin-left: 288px;
+	}
+}
+
+@-o-keyframes cssload-va {
+	0% {
+		margin-left: 288px;
+	}
+	25% {
+		margin-left: 288px;
+	}
+	50% {
+		margin-left: 182px;
+	}
+	55% {
+		margin-left: 182px;
+	}
+	60% {
+		margin-left: 182px;
+	}
+	65% {
+		margin-left: 182px;
+	}
+	75% {
+		margin-left: 288px;
+	}
+	80% {
+		margin-left: 288px;
+	}
+	85% {
+		margin-left: 288px;
+	}
+	90% {
+		margin-left: 288px;
+	}
+	95% {
+		margin-left: 288px;
+	}
+	100% {
+		margin-left: 288px;
+	}
+}
+
+@-ms-keyframes cssload-va {
+	0% {
+		margin-left: 288px;
+	}
+	25% {
+		margin-left: 288px;
+	}
+	50% {
+		margin-left: 182px;
+	}
+	55% {
+		margin-left: 182px;
+	}
+	60% {
+		margin-left: 182px;
+	}
+	65% {
+		margin-left: 182px;
+	}
+	75% {
+		margin-left: 288px;
+	}
+	80% {
+		margin-left: 288px;
+	}
+	85% {
+		margin-left: 288px;
+	}
+	90% {
+		margin-left: 288px;
+	}
+	95% {
+		margin-left: 288px;
+	}
+	100% {
+		margin-left: 288px;
+	}
+}
+
+@-webkit-keyframes cssload-va {
+	0% {
+		margin-left: 288px;
+	}
+	25% {
+		margin-left: 288px;
+	}
+	50% {
+		margin-left: 182px;
+	}
+	55% {
+		margin-left: 182px;
+	}
+	60% {
+		margin-left: 182px;
+	}
+	65% {
+		margin-left: 182px;
+	}
+	75% {
+		margin-left: 288px;
+	}
+	80% {
+		margin-left: 288px;
+	}
+	85% {
+		margin-left: 288px;
+	}
+	90% {
+		margin-left: 288px;
+	}
+	95% {
+		margin-left: 288px;
+	}
+	100% {
+		margin-left: 288px;
+	}
+}
+
+@-moz-keyframes cssload-va {
+	0% {
+		margin-left: 288px;
+	}
+	25% {
+		margin-left: 288px;
+	}
+	50% {
+		margin-left: 182px;
+	}
+	55% {
+		margin-left: 182px;
+	}
+	60% {
+		margin-left: 182px;
+	}
+	65% {
+		margin-left: 182px;
+	}
+	75% {
+		margin-left: 288px;
+	}
+	80% {
+		margin-left: 288px;
+	}
+	85% {
+		margin-left: 288px;
+	}
+	90% {
+		margin-left: 288px;
+	}
+	95% {
+		margin-left: 288px;
+	}
+	100% {
+		margin-left: 288px;
+	}
+}
+                    </textarea>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        
+        <div id="coffee_anim" class="anim_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('coffee_anim');" alt=""/>
+            <div class="clr"></div>
+            <div class="cssload-coffee"></div>
+            <div class="clr"></div>
+        </div>
+        <div id="coffee_code" class="code_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('coffee_code');" alt=""/>
+            <div class="clr"></div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">HTML Markup:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="5">
+&ltdiv class="cssload-coffee"&gt
+	
+&lt/div&gt
+                    </textarea>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">The CSS:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="8">
+.cssload-coffee {
+	text-align:left;
+	height: 100px;
+	width: 80px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: absolute;
+	left: 50%;
+	z-index: 999;
+	background: linear-gradient(to bottom left, rgb(247,148,30), rgb(194,108,7));
+		background: -o-linear-gradient(to bottom left, rgb(247,148,30), rgb(194,108,7));
+		background: -ms-linear-gradient(to bottom left, rgb(247,148,30), rgb(194,108,7));
+		background: -webkit-linear-gradient(to bottom left, rgb(247,148,30), rgb(194,108,7));
+		background: -moz-linear-gradient(to bottom left, rgb(247,148,30), rgb(194,108,7));
+}
+.cssload-coffee:before {
+	position: absolute;
+	content: "";
+	right: -30px;
+	top: 10px;
+	height: 50px;
+	width: 20px;
+	background: transparent;
+	border: 10px solid rgb(247,148,30);
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid rgb(231,129,8);
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	z-index: 1;
+}
+.cssload-coffee:after {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 60px;
+	background: rgb(225,225,225);
+	border-radius: 8px;
+	top: -60px;
+	box-shadow: 70px 0px 0 rgb(225,225,225), 35.5px -30px 0 rgb(225,225,225);
+	opacity: 1;
+	animation: cssload-steam 3.45s ease infinite;
+		-o-animation: cssload-steam 3.45s ease infinite;
+		-ms-animation: cssload-steam 3.45s ease infinite;
+		-webkit-animation: cssload-steam 3.45s ease infinite;
+		-moz-animation: cssload-steam 3.45s ease infinite;
+}
+
+
+
+@keyframes cssload-steam {
+	100% {
+		top: -80px;
+		background: rgb(238,238,238);
+		box-shadow: 70px 0px 0 rgb(238,238,238), 35.5px -30px 0 rgb(238,238,238);
+		opacity: 0.25;
+	}
+}
+
+@-o-keyframes cssload-steam {
+	100% {
+		top: -80px;
+		background: rgb(238,238,238);
+		box-shadow: 70px 0px 0 rgb(238,238,238), 35.5px -30px 0 rgb(238,238,238);
+		opacity: 0.25;
+	}
+}
+
+@-ms-keyframes cssload-steam {
+	100% {
+		top: -80px;
+		background: rgb(238,238,238);
+		box-shadow: 70px 0px 0 rgb(238,238,238), 35.5px -30px 0 rgb(238,238,238);
+		opacity: 0.25;
+	}
+}
+
+@-webkit-keyframes cssload-steam {
+	100% {
+		top: -80px;
+		background: rgb(238,238,238);
+		box-shadow: 70px 0px 0 rgb(238,238,238), 35.5px -30px 0 rgb(238,238,238);
+		opacity: 0.25;
+	}
+}
+
+@-moz-keyframes cssload-steam {
+	100% {
+		top: -80px;
+		background: rgb(238,238,238);
+		box-shadow: 70px 0px 0 rgb(238,238,238), 35.5px -30px 0 rgb(238,238,238);
+		opacity: 0.25;
+	}
+}
+                    </textarea>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        
+        <div id="hand_anim" class="anim_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('hand_anim');" alt=""/>
+            <div class="clr"></div>
+            <div class="cssload-loading">
+	            <div class="cssload-finger cssload-finger-1">
+		            <div class="cssload-finger-item">
+			            <span></span><i></i>
+		            </div>
+	            </div>
+	            <div class="cssload-finger cssload-finger-2">
+		            <div class="cssload-finger-item">
+			            <span></span><i></i>
+		            </div>
+	            </div>
+	            <div class="cssload-finger cssload-finger-3">
+		            <div class="cssload-finger-item">
+			            <span></span><i></i>
+		            </div>
+	            </div>
+	            <div class="cssload-finger cssload-finger-4">
+		            <div class="cssload-finger-item">
+			            <span></span><i></i>
+		            </div>
+	            </div>
+	            <div class="cssload-last-finger">
+		            <div class="cssload-last-finger-item"><i></i></div>
+	            </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div id="hand_code" class="code_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('hand_code');" alt=""/>
+            <div class="clr"></div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">HTML Markup:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="5">
+
+                    </textarea>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">The CSS:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="8">
+
+                    </textarea>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        
+        <div id="hash_anim" class="anim_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('hash_anim');" alt=""/>
+            <div class="clr"></div>
+            <div class="cssload-loader"></div>
+            <div class="clr"></div>
+        </div>
+        <div id="hash_code" class="code_container">
+            <img src="http://imageshack.com/a/img922/2623/WhvRd3.png" class="close_btn" onclick="$(this).close('hash_code');" alt=""/>
+            <div class="clr"></div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">HTML Markup:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="5">
+
+                    </textarea>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">The CSS:</h3>
+                </div>
+                <div class="panel-body">
+                    <textarea class="form-control" rows="8">
+
+                    </textarea>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        
+        <img id="home_button" src="http://europix.net/images/minitop.png" onclick="smoothScroll('home');"/>
 	</body>
 </html>
