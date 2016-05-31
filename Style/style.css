@@ -1,6 +1,9 @@
 body {
 	/*background:#3498DB;*/
 }
+.panel-body {
+	height:100%;
+}
 .box {
     position:relative;
     width:280px;
