@@ -35,12 +35,14 @@
                 leapY += step; if (leapY > stopY) leapY = stopY; timer++;
             } return;
         }
-        for ( var i=startY; i>stopY; i-=step ) {
+        for ( i=startY; i>stopY; i-=step ) {
             setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
             leapY -= step; if (leapY < stopY) leapY = stopY; timer++;
         }
     }
-
+    
+    
+    
 $(document).ready(function(){
     $("#2d_selecter").mouseover(function(){
         $("#2d_desc").hide(300);
@@ -55,4 +57,34 @@ $(document).ready(function(){
     $("#3d_selecter").mouseout(function(){
         $("#3d_desc").show(300);
     });
+    
+    $("#charging_battery_anim").hide();
+    $("#charging_battery_code").hide();
+    
+    $("#rotating_bird_anim").hide();
+    $("#rotating_bird_code").hide();
+    
+    $("#coffee_anim").hide();
+    $("#coffee_code").hide();
+    
+    $("#hand_anim").hide();
+    $("#hand_code").hide();
+    
+    $("#hash_anim").hide();
+    $("#hash_code").hide();
 });
+
+(function($) {
+    $.fn.open = function(msg) {
+        $('#'+msg).show(300);
+    };
+})(jQuery);
+(function($) {
+    $.fn.close = function(msg) {
+        $('#'+msg).hide(300);
+    };
+})(jQuery);
+    
+    
+    
+    
